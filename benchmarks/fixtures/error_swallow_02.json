@@ -1,0 +1,7 @@
+{
+  "id": "error_swallow_02",
+  "bug_type": "error_swallow",
+  "summary": "Broad except: pass introduced around a critical write path.",
+  "diff": "--- a/store.py\n+++ b/store.py\n@@\n def write(path, data):\n-    with open(path, \"wb\") as f:\n-        f.write(data)\n+    try:\n+        with open(path, \"wb\") as f:\n+            f.write(data)\n+    except Exception:\n+        pass\n",
+  "bug_location": {"file": "store.py", "line": 4}
+}

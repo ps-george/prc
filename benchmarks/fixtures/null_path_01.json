@@ -1,0 +1,7 @@
+{
+  "id": "null_path_01",
+  "bug_type": "null_path",
+  "summary": "None-check removed; .get() can return None and crash on attribute access.",
+  "diff": "--- a/users.py\n+++ b/users.py\n@@\n def display_name(users, uid):\n     user = users.get(uid)\n-    if user is None:\n-        return \"anonymous\"\n     return user.name\n",
+  "bug_location": {"file": "users.py", "line": 4}
+}

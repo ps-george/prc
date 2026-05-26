@@ -1,0 +1,7 @@
+{
+  "id": "resource_leak_01",
+  "bug_type": "resource_leak",
+  "summary": "`with open()` replaced with a bare open(); file handle never explicitly closed.",
+  "diff": "--- a/loader.py\n+++ b/loader.py\n@@\n def load(path):\n-    with open(path) as f:\n-        return f.read()\n+    f = open(path)\n+    return f.read()\n",
+  "bug_location": {"file": "loader.py", "line": 3}
+}

@@ -1,0 +1,7 @@
+{
+  "id": "off_by_one_01",
+  "bug_type": "off_by_one",
+  "summary": "Loop condition changed from < to <=, walking one past the end of the list.",
+  "diff": "--- a/pager.py\n+++ b/pager.py\n@@\n def first_page(items, page_size):\n-    return [items[i] for i in range(page_size) if i < len(items)]\n+    return [items[i] for i in range(page_size) if i <= len(items)]\n",
+  "bug_location": {"file": "pager.py", "line": 3}
+}

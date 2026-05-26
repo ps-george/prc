@@ -1,0 +1,7 @@
+{
+  "id": "type_confusion_02",
+  "bug_type": "type_confusion",
+  "summary": "Return type narrowed to bytes but callers still .upper() the result as a str.",
+  "diff": "--- a/codec.py\n+++ b/codec.py\n@@\n-def encode(value: str) -> str:\n-    return value.encode(\"utf-8\").decode(\"utf-8\")\n+def encode(value: str) -> bytes:\n+    return value.encode(\"utf-8\")\n",
+  "bug_location": {"file": "codec.py", "line": 1}
+}

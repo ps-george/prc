@@ -1,0 +1,7 @@
+{
+  "id": "error_swallow_01",
+  "bug_type": "error_swallow",
+  "summary": "Exception re-raise replaced with a bare pass, swallowing failures silently.",
+  "diff": "--- a/sync.py\n+++ b/sync.py\n@@\n def push(record):\n     try:\n         send(record)\n     except NetworkError:\n-        raise\n+        pass\n",
+  "bug_location": {"file": "sync.py", "line": 5}
+}

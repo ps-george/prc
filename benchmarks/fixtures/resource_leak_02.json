@@ -1,0 +1,7 @@
+{
+  "id": "resource_leak_02",
+  "bug_type": "resource_leak",
+  "summary": "Database connection acquired but never released on the error path.",
+  "diff": "--- a/repo.py\n+++ b/repo.py\n@@\n def fetch(id):\n     conn = pool.acquire()\n-    try:\n-        return conn.query(id)\n-    finally:\n-        pool.release(conn)\n+    return conn.query(id)\n",
+  "bug_location": {"file": "repo.py", "line": 3}
+}

@@ -1,0 +1,7 @@
+{
+  "id": "off_by_one_02",
+  "bug_type": "off_by_one",
+  "summary": "Window-sum loop stops one element early after refactor.",
+  "diff": "--- a/window.py\n+++ b/window.py\n@@\n def window_sums(xs, k):\n     out = []\n-    for i in range(len(xs) - k + 1):\n+    for i in range(len(xs) - k):\n         out.append(sum(xs[i:i + k]))\n     return out\n",
+  "bug_location": {"file": "window.py", "line": 4}
+}

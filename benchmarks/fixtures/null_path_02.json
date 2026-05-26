@@ -1,0 +1,7 @@
+{
+  "id": "null_path_02",
+  "bug_type": "null_path",
+  "summary": "find_first() can return None but the caller dereferences it unconditionally.",
+  "diff": "--- a/parser.py\n+++ b/parser.py\n@@\n def first_word_len(text):\n     word = find_first(text)\n-    return len(word) if word is not None else 0\n+    return len(word)\n",
+  "bug_location": {"file": "parser.py", "line": 3}
+}

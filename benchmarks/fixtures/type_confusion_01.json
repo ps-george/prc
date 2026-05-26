@@ -1,0 +1,7 @@
+{
+  "id": "type_confusion_01",
+  "bug_type": "type_confusion",
+  "summary": "Signature changed from int to str; arithmetic at call site now silently concatenates or errors.",
+  "diff": "--- a/billing.py\n+++ b/billing.py\n@@\n-def line_total(qty: int, unit_price: int) -> int:\n-    return qty * unit_price\n+def line_total(qty: str, unit_price: int) -> int:\n+    return qty * unit_price\n",
+  "bug_location": {"file": "billing.py", "line": 1}
+}
