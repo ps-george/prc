@@ -1,0 +1,535 @@
+{
+  "stamp": "2026-05-26T211643Z",
+  "model": "anthropic/claude-sonnet-4.6",
+  "api_base": "https://openrouter.ai/api/v1",
+  "n_instances": 20,
+  "prc": {
+    "n": 20,
+    "caught": 18,
+    "missed": 2,
+    "errors": 0,
+    "recall": 0.9,
+    "per_instance": [
+      {
+        "instance_id": "astropy__astropy-13579",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Dropped world axes filled with hardcoded 1.0 instead of actual sliced coordinate"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15375",
+        "repo": "django/django",
+        "bug_file": "django/db/models/aggregates.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "is_summary not propagated to Coalesce wrapper, breaking aggregate recognition"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7571",
+        "repo": "pytest-dev/pytest",
+        "bug_file": "src/_pytest/logging.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Handler log level set in set_level is never restored, leaking between tests"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-21847",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/polys/monomials.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "Wrong filter predicate: `max` instead of `sum` for scalar min_degree (commutative branch)",
+          "Wrong filter predicate: `max` instead of `sum` for scalar min_degree (non-commutative branch)"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-16493",
+        "repo": "django/django",
+        "bug_file": "django/db/models/fields/files.py",
+        "patch_lines": 5,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14096",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/coordinates/sky_coordinate.py",
+        "patch_lines": 6,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-22871",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/dates.py",
+        "patch_lines": 6,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Offset incorrectly suppressed for year/month ticks that don't include value 1"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-14608",
+        "repo": "django/django",
+        "bug_file": "django/forms/formsets.py",
+        "patch_lines": 7,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 2,
+        "issue_titles": [
+          "Non-form errors lose 'nonform' CSS class on initialization",
+          "Caught ValidationError errors lose 'nonform' CSS class"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-11964",
+        "repo": "django/django",
+        "bug_file": "django/db/models/enums.py",
+        "patch_lines": 8,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Removal of `__str__` causes Choices members to render as 'ClassName.MEMBER' instead of their value"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-7671",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/utils/introspection.py",
+        "patch_lines": 9,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "LooseVersion raises TypeError on pre-release version strings"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19954",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/combinatorics/perm_groups.py",
+        "patch_lines": 9,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 1,
+        "issue_titles": [
+          "In-place deletion during index-based loop causes index misalignment",
+          "`rep_blocks` filtered by value equality, not by index, causing wrong removals when duplicate sets exist"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12973",
+        "repo": "scikit-learn/scikit-learn",
+        "bug_file": "sklearn/linear_model/least_angle.py",
+        "patch_lines": 10,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "copy_X argument passed to fit() is silently ignored"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-10614",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/ext/inheritance_diagram.py",
+        "patch_lines": 11,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 3,
+        "major_count": 0,
+        "issue_titles": [
+          "Spurious '../' prepended to external refuri links in SVG output",
+          "Wrong dictionary key used for external (intersphinx) refuri nodes",
+          "Spurious '../' prepended to internal refid anchor links in SVG output"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-22080",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/printing/codeprinter.py",
+        "patch_lines": 12,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "Unary minus on Pow loses parentheses in generated code",
+          "Mod expressions not parenthesized in multiplication contexts"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19783",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/physics/quantum/dagger.py",
+        "patch_lines": 13,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "IdentityOperator.__mul__ no longer simplifies Dagger objects",
+          "Dagger.__mul__ removed, so Dagger(x) * IdentityOperator no longer simplifies"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7985",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/builders/linkcheck.py",
+        "patch_lines": 17,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 1,
+        "issue_titles": [
+          "Local file URIs no longer validated against filesystem or ignore rules",
+          "Non-HTTP URI schemes (e.g. data:, tel:, javascript:) incorrectly classified as 'local'"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24970",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/colors.py",
+        "patch_lines": 21,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 2,
+        "issue_titles": [
+          "Integer/unsigned-integer inputs no longer cast to int, breaking colormap index lookup",
+          "Float arithmetic (`xa *= self.N`, comparisons) now runs outside `errstate(invalid='ignore')`, exposing spurious RuntimeWarnings for NaN inputs"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15563",
+        "repo": "django/django",
+        "bug_file": "django/db/models/sql/compiler.py",
+        "patch_lines": 25,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "MTI ancestor updates filtered by child PKs instead of ancestor PKs",
+          "Only root PK selected; ancestor PKs needed for non-PK-chain MTI updates are never fetched"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15732",
+        "repo": "django/django",
+        "bug_file": "django/db/backends/base/schema.py",
+        "patch_lines": 32,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "Disambiguation logic removed: multiple constraints on same fields causes ValueError on MySQL/similar backends",
+          "Removal of `primary_key: False` filter allows accidental deletion of primary-key constraints"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14182",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/io/ascii/rst.py",
+        "patch_lines": 41,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 1,
+        "issue_titles": [
+          "Hardcoded `lines[1]` as separator assumes exactly one header row, breaks multi-row headers and crashes on empty tables",
+          "`start_line = 3` is wrong when `header_rows` has more or fewer than two rows; `read()` removal makes it unconfigurable",
+          "`__init__` no longer accepts `header_rows`, silently ignoring a previously public keyword argument"
+        ],
+        "error": null
+      }
+    ],
+    "wall_seconds": 388.7522137919441
+  },
+  "vanilla": {
+    "n": 20,
+    "caught": 0,
+    "missed": 20,
+    "errors": 0,
+    "recall": 0.0,
+    "per_instance": [
+      {
+        "instance_id": "astropy__astropy-13579",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+        "patch_lines": 4,
+        "caught": false,
+        "response_chars": 1318,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15375",
+        "repo": "django/django",
+        "bug_file": "django/db/models/aggregates.py",
+        "patch_lines": 4,
+        "caught": false,
+        "response_chars": 685,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7571",
+        "repo": "pytest-dev/pytest",
+        "bug_file": "src/_pytest/logging.py",
+        "patch_lines": 4,
+        "caught": false,
+        "response_chars": 759,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-21847",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/polys/monomials.py",
+        "patch_lines": 4,
+        "caught": false,
+        "response_chars": 1026,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "django__django-16493",
+        "repo": "django/django",
+        "bug_file": "django/db/models/fields/files.py",
+        "patch_lines": 5,
+        "caught": false,
+        "response_chars": 1443,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14096",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/coordinates/sky_coordinate.py",
+        "patch_lines": 6,
+        "caught": false,
+        "response_chars": 1282,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-22871",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/dates.py",
+        "patch_lines": 6,
+        "caught": false,
+        "response_chars": 695,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "django__django-14608",
+        "repo": "django/django",
+        "bug_file": "django/forms/formsets.py",
+        "patch_lines": 7,
+        "caught": false,
+        "response_chars": 465,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "django__django-11964",
+        "repo": "django/django",
+        "bug_file": "django/db/models/enums.py",
+        "patch_lines": 8,
+        "caught": false,
+        "response_chars": 783,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-7671",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/utils/introspection.py",
+        "patch_lines": 9,
+        "caught": false,
+        "response_chars": 689,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19954",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/combinatorics/perm_groups.py",
+        "patch_lines": 9,
+        "caught": false,
+        "response_chars": 768,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12973",
+        "repo": "scikit-learn/scikit-learn",
+        "bug_file": "sklearn/linear_model/least_angle.py",
+        "patch_lines": 10,
+        "caught": false,
+        "response_chars": 660,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-10614",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/ext/inheritance_diagram.py",
+        "patch_lines": 11,
+        "caught": false,
+        "response_chars": 1485,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-22080",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/printing/codeprinter.py",
+        "patch_lines": 12,
+        "caught": false,
+        "response_chars": 1254,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19783",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/physics/quantum/dagger.py",
+        "patch_lines": 13,
+        "caught": false,
+        "response_chars": 772,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7985",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/builders/linkcheck.py",
+        "patch_lines": 17,
+        "caught": false,
+        "response_chars": 1324,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24970",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/colors.py",
+        "patch_lines": 21,
+        "caught": false,
+        "response_chars": 945,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15563",
+        "repo": "django/django",
+        "bug_file": "django/db/models/sql/compiler.py",
+        "patch_lines": 25,
+        "caught": false,
+        "response_chars": 1049,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15732",
+        "repo": "django/django",
+        "bug_file": "django/db/backends/base/schema.py",
+        "patch_lines": 32,
+        "caught": false,
+        "response_chars": 1253,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14182",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/io/ascii/rst.py",
+        "patch_lines": 41,
+        "caught": false,
+        "response_chars": 2119,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "error": null
+      }
+    ],
+    "wall_seconds": 145.92699133325368
+  }
+}

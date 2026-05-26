@@ -1,0 +1,839 @@
+{
+  "stamp": "2026-05-26T212747Z",
+  "model": "anthropic/claude-sonnet-4.6",
+  "api_base": "https://openrouter.ai/api/v1",
+  "n_instances": 20,
+  "prc": {
+    "n": 20,
+    "caught": 18,
+    "missed": 2,
+    "errors": 0,
+    "recall": 0.9,
+    "per_instance": [
+      {
+        "instance_id": "astropy__astropy-13579",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Dropped world axes filled with hardcoded 1.0 instead of actual sliced coordinate"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15375",
+        "repo": "django/django",
+        "bug_file": "django/db/models/aggregates.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "is_summary not propagated to Coalesce wrapper, breaking aggregate recognition"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7571",
+        "repo": "pytest-dev/pytest",
+        "bug_file": "src/_pytest/logging.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Handler log level set in set_level is never restored, leaking between tests"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-21847",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/polys/monomials.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "Wrong filter predicate: `max` instead of `sum` for scalar min_degree (commutative branch)",
+          "Wrong filter predicate: `max` instead of `sum` for scalar min_degree (non-commutative branch)"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-16493",
+        "repo": "django/django",
+        "bug_file": "django/db/models/fields/files.py",
+        "patch_lines": 5,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14096",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/coordinates/sky_coordinate.py",
+        "patch_lines": 6,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-22871",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/dates.py",
+        "patch_lines": 6,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Offset incorrectly suppressed for year/month ticks that don't include value 1"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-14608",
+        "repo": "django/django",
+        "bug_file": "django/forms/formsets.py",
+        "patch_lines": 7,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 2,
+        "issue_titles": [
+          "Non-form errors lose 'nonform' CSS class on initialization",
+          "Caught ValidationError errors lose 'nonform' CSS class"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-11964",
+        "repo": "django/django",
+        "bug_file": "django/db/models/enums.py",
+        "patch_lines": 8,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Removal of `__str__` causes Choices members to render as 'ClassName.MEMBER' instead of their value"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-7671",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/utils/introspection.py",
+        "patch_lines": 9,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "LooseVersion raises TypeError on pre-release version strings"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19954",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/combinatorics/perm_groups.py",
+        "patch_lines": 9,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 1,
+        "issue_titles": [
+          "In-place deletion during index-based loop causes index misalignment",
+          "`rep_blocks` filtered by value equality, not by index, causing wrong removals when duplicate sets exist"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12973",
+        "repo": "scikit-learn/scikit-learn",
+        "bug_file": "sklearn/linear_model/least_angle.py",
+        "patch_lines": 10,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "copy_X argument passed to fit() is silently ignored"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-10614",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/ext/inheritance_diagram.py",
+        "patch_lines": 11,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 3,
+        "major_count": 0,
+        "issue_titles": [
+          "Spurious '../' prepended to external refuri links in SVG output",
+          "Wrong dictionary key used for external (intersphinx) refuri nodes",
+          "Spurious '../' prepended to internal refid anchor links in SVG output"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-22080",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/printing/codeprinter.py",
+        "patch_lines": 12,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "Unary minus on Pow loses parentheses in generated code",
+          "Mod expressions not parenthesized in multiplication contexts"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19783",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/physics/quantum/dagger.py",
+        "patch_lines": 13,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "IdentityOperator.__mul__ no longer simplifies Dagger objects",
+          "Dagger.__mul__ removed, so Dagger(x) * IdentityOperator no longer simplifies"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7985",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/builders/linkcheck.py",
+        "patch_lines": 17,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 1,
+        "issue_titles": [
+          "Local file URIs no longer validated against filesystem or ignore rules",
+          "Non-HTTP URI schemes (e.g. data:, tel:, javascript:) incorrectly classified as 'local'"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24970",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/colors.py",
+        "patch_lines": 21,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 2,
+        "issue_titles": [
+          "Integer/unsigned-integer inputs no longer cast to int, breaking colormap index lookup",
+          "Float arithmetic (`xa *= self.N`, comparisons) now runs outside `errstate(invalid='ignore')`, exposing spurious RuntimeWarnings for NaN inputs"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15563",
+        "repo": "django/django",
+        "bug_file": "django/db/models/sql/compiler.py",
+        "patch_lines": 25,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "MTI ancestor updates filtered by child PKs instead of ancestor PKs",
+          "Only root PK selected; ancestor PKs needed for non-PK-chain MTI updates are never fetched"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15732",
+        "repo": "django/django",
+        "bug_file": "django/db/backends/base/schema.py",
+        "patch_lines": 32,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 0,
+        "issue_titles": [
+          "Disambiguation logic removed: multiple constraints on same fields causes ValueError on MySQL/similar backends",
+          "Removal of `primary_key: False` filter allows accidental deletion of primary-key constraints"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14182",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/io/ascii/rst.py",
+        "patch_lines": 41,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 2,
+        "major_count": 1,
+        "issue_titles": [
+          "Hardcoded `lines[1]` as separator assumes exactly one header row, breaks multi-row headers and crashes on empty tables",
+          "`start_line = 3` is wrong when `header_rows` has more or fewer than two rows; `read()` removal makes it unconfigurable",
+          "`__init__` no longer accepts `header_rows`, silently ignoring a previously public keyword argument"
+        ],
+        "error": null
+      }
+    ],
+    "wall_seconds": 388.7522137919441
+  },
+  "vanilla": {
+    "n": 20,
+    "caught": 20,
+    "missed": 0,
+    "errors": 0,
+    "recall": 1.0,
+    "per_instance": [
+      {
+        "instance_id": "astropy__astropy-13579",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+        "patch_lines": 4,
+        "caught": true,
+        "response_chars": 857,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nThe original code computed `sliced_out_world_coords` by calling `_pixel_to_world_values_all(*[0]*len(self._pixel_keep))` \u2014 i.e., it evaluated the world coordinates at pixel position 0 for the sliced-out dimensions. This gave physically meaningful fill values for the dropped world axes (e.g., the actual RA/Dec corresponding to the fixed pixel slice).\n\nThe replacement uses a hardcoded `1.` for all dropped world axes. This is incorrect in general. For a non-trivial WCS (e.g., a coupled celestial+spectral system, or any WCS where the dropped axes don't have a default of 1 in world coordinates), this will produce wrong pixel results when inverting. The correct fill value depends on the slice position, not a hardcoded constant.\n\nThis is a correctness regression for any WCS where the sliced-out world coordinate at pixel 0 is not 1.",
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15375",
+        "repo": "django/django",
+        "bug_file": "django/db/models/aggregates.py",
+        "patch_lines": 4,
+        "caught": true,
+        "response_chars": 643,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug. The original code sets `coalesce.is_summary = c.is_summary` before returning, ensuring the `Coalesce` wrapper inherits the `is_summary` flag from the aggregate. The refactored code drops this assignment, so `is_summary` will default to `False` on the `Coalesce` node even when it should be `True`.\n\nThis matters because `is_summary` controls whether the expression is treated as a summary/aggregate in query validation and SQL generation. Losing it can cause incorrect query behavior or validation errors when the aggregate is used in a summarizing context (e.g., nested aggregation or `annotate` over a `values` queryset).",
+        "error": null
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7571",
+        "repo": "pytest-dev/pytest",
+        "bug_file": "src/_pytest/logging.py",
+        "patch_lines": 4,
+        "caught": true,
+        "response_chars": 896,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Looking at this diff, I found a bug.\n\n**Bug: `set_level` still sets `self.handler.setLevel(level)` but `_finalize` no longer restores it.**\n\nThe removal of `self._initial_handler_level` tracking means the handler's log level is changed by `set_level` but never restored during teardown. This is a regression: after a test calls `caplog.set_level(...)`, the handler level will remain at whatever level was set, potentially affecting subsequent tests.\n\nThe logger levels are properly saved/restored via `_initial_logger_levels`, but the handler level restoration was independently necessary and has been dropped without also removing the `self.handler.setLevel(level)` call.\n\nEither the `self.handler.setLevel(level)` call in `set_level` should also be removed (if the intent is that handler level no longer needs to be managed here), or the save/restore logic for the handler level should be kept.",
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-21847",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/polys/monomials.py",
+        "patch_lines": 4,
+        "caught": true,
+        "response_chars": 900,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nThe original `sum(powers.values()) >= min_degree` checks that the **total degree** of the monomial meets the minimum degree threshold. The replacement `max(powers.values()) >= min_degree` checks that at least one variable's individual exponent meets the threshold, which is a different (and incorrect) condition.\n\nFor example, with `variables = [x, y]`, `max_degrees = 2`, `min_degrees = 2`:\n- The monomial `x*y` has total degree 2, so it should be included.\n- But `max(powers.values())` for `x*y` is `1` (each variable appears once), so `1 >= 2` is `False` and it gets **incorrectly excluded**.\n\nConversely, a monomial like `x` with `min_degrees = 1` would pass `max(...) >= 1` but so would monomials that shouldn't pass in other configurations.\n\nThe `sum` was correct for the scalar (single integer) `min_degree` case \u2014 it computes total degree. The `max` replacement is wrong.",
+        "error": null
+      },
+      {
+        "instance_id": "django__django-16493",
+        "repo": "django/django",
+        "bug_file": "django/db/models/fields/files.py",
+        "patch_lines": 5,
+        "caught": true,
+        "response_chars": 1443,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "The refactored code has a bug.\n\nIn the original code, `storage` is resolved via `getattr(self, \"_storage_callable\", self.storage)` **before** the comparison. This means when a callable was used, the comparison `storage is not default_storage` correctly compares the callable itself against `default_storage`.\n\nIn the new code, the condition `self.storage is not default_storage` is checked first. `self.storage` is always the **resolved** storage instance (the result of calling the callable), never the callable itself. So if someone passes a callable that returns `default_storage`, the original code would correctly omit it from kwargs (since the callable resolves to `default_storage`... actually wait, the callable itself wouldn't be `default_storage`).\n\nActually the real bug: if `_storage_callable` is a callable that **returns** `default_storage`, the original code would include it in kwargs (since the callable `is not default_storage`), which is correct behavior for round-tripping. The new code checks `self.storage is not default_storage` \u2014 since `self.storage` is the resolved instance which **is** `default_storage`, it would **skip** adding the callable to kwargs, losing the callable in deconstruction. This is a regression.\n\nSo yes, there is a bug: when a callable storage that returns `default_storage` is used, the new code incorrectly omits it from the deconstructed kwargs, while the original code correctly preserved it.",
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14096",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/coordinates/sky_coordinate.py",
+        "patch_lines": 6,
+        "caught": true,
+        "response_chars": 1214,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "The change looks functionally equivalent for the common case, but there is a subtle bug/regression:\n\n`self.__getattribute__(attr)` would raise `AttributeError` too, but it also invokes the normal attribute lookup machinery, which means descriptors or other mechanisms on the class that might be found via `__getattribute__` but not via `__getattr__` would still be reached. More importantly, the original code delegates to `__getattribute__`, which is the correct protocol \u2014 `__getattr__` is only called when normal lookup fails, but calling `__getattribute__` again gives any remaining machinery a chance to run (e.g., if a subclass overrides `__getattribute__`).\n\nThe practical regression: if a subclass overrides `__getattribute__`, the original code would respect that, while the new code bypasses it and raises immediately. This is a correctness issue for subclasses.\n\nAdditionally, the error message format is slightly different from what `__getattribute__` would produce natively (though this is minor).\n\nIn short: **yes, there is a bug** \u2014 the refactor breaks subclass extensibility by bypassing `__getattribute__` and raising unconditionally, rather than delegating to the standard attribute lookup chain.",
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-22871",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/dates.py",
+        "patch_lines": 6,
+        "caught": true,
+        "response_chars": 810,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nThe original code had a specific condition: `if level < 2 and np.any(unique == 1)` \u2014 meaning `show_offset = False` only when the unique values at that level include `1` (i.e., January for months, or the 1st for days). This was intentional: if the year is shown in the ticks (because month=1 or day=1 appears), the offset (year label) is redundant and suppressed.\n\nThe refactored code changes this to simply `if level < 2`, which means `show_offset = False` **whenever** the varying level is months or days, regardless of whether `1` appears in the values. This is a logic regression \u2014 it will suppress the offset year label even when it shouldn't be (e.g., when ticking months 3\u20135 of a single year, the offset year should still be shown, but now it won't be).\n\n**Yes, this is a real bug.**",
+        "error": null
+      },
+      {
+        "instance_id": "django__django-14608",
+        "repo": "django/django",
+        "bug_file": "django/forms/formsets.py",
+        "patch_lines": 7,
+        "caught": true,
+        "response_chars": 595,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug. The refactor removes the `error_class='nonform'` argument from both `self.error_class()` calls.\n\nThe `error_class='nonform'` argument causes the rendered error list to include a CSS class of `nonform` (in addition to `errorlist`), which allows styling of formset-level errors differently from field-level errors. Removing it is a regression \u2014 any CSS or templates relying on the `nonform` class for formset non-form errors will break.\n\nThis is a deliberate feature, not incidental \u2014 it was introduced specifically to distinguish non-form errors from field errors in formsets.",
+        "error": null
+      },
+      {
+        "instance_id": "django__django-11964",
+        "repo": "django/django",
+        "bug_file": "django/db/models/enums.py",
+        "patch_lines": 8,
+        "caught": true,
+        "response_chars": 483,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nRemoving `__str__` from `Choices` breaks the behavior where enum members render as their value when cast to a string. For example, a `CharField` with a `Choices` enum value would previously render the value (e.g., `\"active\"`) in templates, but now it will render the default enum `__str__` output (e.g., `\"MyEnum.ACTIVE\"`). This is a regression for template rendering and any other context that relies on `str(instance.field)` returning the human-readable value.",
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-7671",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/utils/introspection.py",
+        "patch_lines": 9,
+        "caught": true,
+        "response_chars": 661,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug. The removed code stripped pre-release suffixes (like `dev`, `rc1`) from the `version` argument before passing it to `LooseVersion`, because `LooseVersion` raises a `TypeError` when comparing versions that contain such strings. Removing this workaround means `minversion` will now raise a `TypeError` (instead of returning a boolean) when called with a version string like `'1.0dev'` or `'2.0rc1'`.\n\nAlso note the regex was only applied to the `version` parameter (the minimum required version), not `have_version`. If `have_version` also contains such strings, the bug existed before too \u2014 but removing the regex makes things strictly worse.",
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19954",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/combinatorics/perm_groups.py",
+        "patch_lines": 9,
+        "caught": true,
+        "response_chars": 773,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug. The `del num_blocks[i], blocks[i]` inside the loop mutates the lists while iterating over `rep_blocks` using enumerated indices. After a deletion, the indices shift, so subsequent deletions will target the wrong elements.\n\nAdditionally, `del num_blocks[i], blocks[i]` happens eagerly inside the loop, but `rep_blocks` is only cleaned up afterward via list comprehension. This means `rep_blocks`, `num_blocks`, and `blocks` can get out of sync if multiple elements are removed \u2014 the indices used for `del` on `num_blocks` and `blocks` are already wrong after the first deletion.\n\nThe original code avoided this by collecting a boolean mask first and then filtering all three lists consistently in one pass. The refactor breaks that correctness guarantee.",
+        "error": null
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12973",
+        "repo": "scikit-learn/scikit-learn",
+        "bug_file": "sklearn/linear_model/least_angle.py",
+        "patch_lines": 10,
+        "caught": true,
+        "response_chars": 580,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nThe refactor removed the ability to override `copy_X` at `fit()` time, but more importantly, it now **ignores the `copy_X` parameter passed to `fit()`** entirely. The `_preprocess_data` call uses `self.copy_X` instead of the `copy_X` argument. So if a caller passes `copy_X=True` to `fit()`, it has no effect \u2014 `self.copy_X` is used instead.\n\nThe old code used `copy_X` (the parameter, defaulting to `self.copy_X` if `None`) in `_preprocess_data`. The new code always uses `self.copy_X`, making the `copy_X` parameter to `fit()` a no-op. This is a regression.",
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-10614",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/ext/inheritance_diagram.py",
+        "patch_lines": 11,
+        "caught": true,
+        "response_chars": 1138,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there are bugs.\n\n**Bug 1: Loss of intersphinx external reference handling**\n\nThe original code had special handling for external (intersphinx) references:\n```python\nif not child.get('internal', True):\n    refname = child['refuri'].rsplit('#', 1)[-1]\n```\nThis extracted the refname from the URI for external references. The new code unconditionally uses `child['reftitle']` as the key. If `child['reftitle']` doesn't match the node name used as a key elsewhere in the diagram, external intersphinx links will be silently broken (wrong key, URL never looked up).\n\n**Bug 2: Incorrect `../` prepended to SVG `refuri` links**\n\nFor the `refuri` SVG case, the new code adds `\"../\"` prefix:\n```python\nurls[child['reftitle']] = \"../\" + child.get('refuri')\n```\nBut `refuri` can be an absolute URL (e.g., `https://...`) or a relative path that doesn't need a `../` prefix. The `refid` case getting `../` makes sense if SVG files are placed in a subdirectory, but blindly prepending `../` to arbitrary `refuri` values (especially absolute URLs) is wrong. The original code did not add `../` for `refuri` at all.\n\nThese are real correctness bugs.",
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-22080",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/printing/codeprinter.py",
+        "patch_lines": 12,
+        "caught": true,
+        "response_chars": 1851,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there are bugs.\n\n## Bug 1: Incorrect parenthesization of unary minus operand\n\nThe removal of the special case for unary minus is a correctness regression. When `sign == \"-\"` and `len(a) == 1`, the single factor needs to be parenthesized at a precedence level between `Pow` and `Mul` (i.e., `0.5*(PRECEDENCE[\"Pow\"]+PRECEDENCE[\"Mul\"])`). This is because Python's unary minus binds tighter than multiplication but looser than exponentiation.\n\nWith the new code, `self.parenthesize(x, prec)` uses `prec = precedence(expr)` which is `PRECEDENCE[\"Mul\"]`. This means an expression like `-x**2` could be printed as `-x**2` correctly, but something like `-(x+y)` might lose parentheses \u2014 wait, actually `Add` has lower precedence than `Mul` so it would still be parenthesized. However, the real issue is with expressions like `-2**(x+1)`: the old code ensured the base was parenthesized correctly relative to unary minus. The special case existed specifically to handle the interaction between unary minus and exponentiation in generated code (e.g., C, Fortran), where `-x**2` means `-(x**2)` in Python/math but could be misread. Removing this special handling can produce incorrectly parenthesized output for code generation targets.\n\n## Bug 2: Removal of `\"Mod\": PRECEDENCE[\"Mul\"]` from precedence table\n\nRemoving `Mod` from the `PRECEDENCE_VALUES` dict means `precedence_Mul` or the default lookup will no longer return `PRECEDENCE[\"Mul\"]` for `Mod` expressions. The `precedence()` function falls back to checking the class hierarchy, but `Mod` is not a subclass of `Mul`, so it will likely get `PRECEDENCE[\"Atom\"]` or some default, causing `Mod` expressions to be under-parenthesized (or over-parenthesized) in printed output. For example, `x % y + z` could be printed without necessary parentheses around the `Mod`.\n\nBoth changes look like real bugs.",
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19783",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/physics/quantum/dagger.py",
+        "patch_lines": 13,
+        "caught": true,
+        "response_chars": 800,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nIn `operator.py`, the `IdentityOperator.__mul__` method was changed from:\n\n```python\nif isinstance(other, (Operator, Dagger)):\n    return other\n```\n\nto:\n\n```python\nif isinstance(other, Operator):\n    return other\n```\n\nThis removes the `Dagger` case from `IdentityOperator.__mul__`. So `Identity * Dagger(op)` will no longer simplify to `Dagger(op)` and will instead return `Mul(Identity, Dagger(op))`.\n\nTo compensate, the PR removed `Dagger.__mul__` which handled `Dagger * Identity \u2192 self`. But that's the *reverse* order. The removed `Dagger.__mul__` handled `dagger * identity`, while the removed `Dagger` check in `IdentityOperator.__mul__` handled `identity * dagger`. These are two different cases, and only one was compensated \u2014 the `identity * dagger` case is now broken.",
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7985",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/builders/linkcheck.py",
+        "patch_lines": 17,
+        "caught": true,
+        "response_chars": 1342,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there are bugs introduced by this refactor.\n\n1. **Local file checking is removed.** The original code, when encountering a non-HTTP URI that didn't match `uri_re` (i.e., a relative local path), would check if the file actually exists on disk, and return `'working'`, `'ignored'`, or `'broken'` accordingly. The new code collapses all non-`http:`/`https:` URIs (that aren't `#`, `mailto:`, or `ftp:`) into `return 'local', '', 0`, silently skipping the existence check. This means broken local links will no longer be reported.\n\n2. **`ftp:` URIs are now silently skipped instead of being checked.** The original `uri_re` matched any `scheme://` pattern, so `ftp:` URIs were returned as `'unchecked'`. The new code explicitly adds `ftp:` to the early-exit condition, which is consistent in intent \u2014 but combined with the blanket `'local'` return for everything else, other previously-checked or previously-reported URI types may also be silently swallowed.\n\n3. **The `'local'` status may be an unrecognized result code.** If the rest of the codebase only handles `'working'`, `'broken'`, `'ignored'`, `'unchecked'`, and `'timeout'`, introducing `'local'` without updating the result-handling logic could cause silent failures or unhandled cases in reporting.\n\nThe most significant bug is #1: broken local file links are no longer detected.",
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24970",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/colors.py",
+        "patch_lines": 21,
+        "caught": true,
+        "response_chars": 755,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nIn the original code, `xa.astype(int)` was inside `with np.errstate(invalid=\"ignore\")` and ran for **all** dtypes (including unsigned ints), with the comment explicitly saying \"We need this cast for unsigned ints as well as floats.\"\n\nIn the refactored code, `xa = xa.astype(int)` is moved inside the `if xa.dtype.kind == \"f\"` block, so **non-float arrays (e.g., unsigned int dtypes) no longer get cast to int**. This means the subsequent indexing operations (`xa[xa > self.N - 1] = self._i_over`, etc.) operate on the original unsigned integer dtype, which can cause incorrect behavior \u2014 for example, assigning `-1` to an unsigned int array would wrap around rather than being stored as `-1`, breaking the under-range detection logic.",
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15563",
+        "repo": "django/django",
+        "bug_file": "django/db/models/sql/compiler.py",
+        "patch_lines": 25,
+        "caught": true,
+        "response_chars": 1447,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\n**The problem:** The refactor assumes that `self.related_ids` (a flat list of PKs from the main model) can be used directly to filter *all* related models in `get_related_updates`. But the original code maintained a per-model mapping (`related_ids[model]`) because related models in a MTI hierarchy may have *different* PKs than the main model's PK \u2014 specifically in the non-primary-key-chain case (the `else` branch that was deleted).\n\nThe deleted code handled the case where an ancestor model in a MTI tree is *not* connected via a primary key chain. In that case, the ancestor's PK values were fetched separately (as an additional column in the SELECT) and stored under `related_ids[parent]`. These values could differ from the main model's PKs.\n\n**The new code:**\n1. Only fetches the main model's PK column (`query.add_fields([query.get_meta().pk.name])`), dropping the extra columns for non-PK-chain ancestors.\n2. Uses the same flat `idents` list to filter all related model updates, regardless of whether those related models share the same PK values.\n\nThis means that for MTI models where an ancestor's PK is *not* the same as the child's PK (the non-primary-key-chain branch), the related update will be filtered using the wrong IDs, potentially updating wrong rows or missing rows entirely.\n\n**In summary:** Yes, this is a correctness bug for MTI update queries involving ancestor models not in the primary key chain.",
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15732",
+        "repo": "django/django",
+        "bug_file": "django/db/backends/base/schema.py",
+        "patch_lines": 32,
+        "caught": true,
+        "response_chars": 1024,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there's a bug.\n\nThe removal of `\"primary_key\": False` from the `constraint_kwargs` passed to `_delete_composed_index` in `alter_unique_together` is a regression. Previously, the filter explicitly excluded primary key constraints. Without `\"primary_key\": False`, `_delete_composed_index` may now match and attempt to delete a primary key constraint when looking for unique constraints, which would be incorrect behavior.\n\nAdditionally, the removal of the disambiguation logic in `_delete_composed_index` (the block that filtered `constraint_names` down to the default unique_together name when `allows_multiple_constraints_on_same_fields` is True) means that on databases supporting multiple constraints on the same fields, if there are multiple unique constraints on the same columns, the code will now raise a `ValueError` (\"Found wrong number of constraints\") instead of correctly identifying and deleting the one that matches the `unique_together` name. This is a correctness regression for backends like PostgreSQL.",
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14182",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/io/ascii/rst.py",
+        "patch_lines": 41,
+        "caught": true,
+        "response_chars": 1737,
+        "mentioned_file": false,
+        "mentioned_bug_words": true,
+        "response_text": "Yes, there are bugs.\n\n1. **`start_line = 3` is wrong for the default case.** The original code set `self.data.start_line = 2 + len(self.header.header_rows)`, which for the default single header row gives `start_line = 3`. That matches. But the new code hardcodes `start_line = 3` as a class attribute, which means it's always 3 regardless of `header_rows`. However, the bigger issue is that `header_rows` support has been entirely removed \u2014 so this is a regression in functionality, not just a latent bug.\n\n2. **`lines[1]` is wrong in `write`.** The original code used `lines[idx]` where `idx = len(self.header.header_rows)`. For a single header row, `idx = 1`, so `lines[1]` happens to be correct in the default case. But the separator line in RST output is `lines[0]` (the first line written by `super().write()` is the top separator). Wait \u2014 let me re-examine: `super().write()` for FixedWidth with `header_rows=['name']` produces `[col_names_row, data_rows...]`, and the original code prepended/appended `lines[idx]` (the first data-looking line, which is actually the separator). Actually the separator is at index `idx` in the pre-wrapped output. With `header_rows` removed and always one header row, `lines[1]` should be the separator \u2014 this is coincidentally correct for the default case only.\n\n3. **`header_rows` parameter removed entirely.** The `__init__` no longer accepts `header_rows`, breaking any caller that passes it (e.g., `tbl.write(..., header_rows=['name', 'unit'])`). This is a clear regression.\n\n**Summary:** The removal of `header_rows` support is the main bug/regression. The hardcoded `start_line = 3` and `lines[1]` are only correct for the single-header-row default case, breaking multi-row headers silently.",
+        "error": null
+      }
+    ],
+    "wall_seconds": 150.02510654181242
+  },
+  "prc_forward_fp_control": {
+    "n": 20,
+    "caught": 12,
+    "missed": 8,
+    "errors": 0,
+    "recall": 0.6,
+    "per_instance": [
+      {
+        "instance_id": "astropy__astropy-13579",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 1,
+        "issue_titles": [
+          "_pixel_to_world_values_all called with wrong number of arguments",
+          "Sliced pixel dimensions use pixel=0 instead of the actual slice position"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15375",
+        "repo": "django/django",
+        "bug_file": "django/db/models/aggregates.py",
+        "patch_lines": 4,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "pytest-dev__pytest-7571",
+        "repo": "pytest-dev/pytest",
+        "bug_file": "src/_pytest/logging.py",
+        "patch_lines": 4,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 1,
+        "issue_titles": [
+          "Handler's initial level overwritten on repeated `set_level` calls"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-21847",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/polys/monomials.py",
+        "patch_lines": 4,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-16493",
+        "repo": "django/django",
+        "bug_file": "django/db/models/fields/files.py",
+        "patch_lines": 5,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14096",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/coordinates/sky_coordinate.py",
+        "patch_lines": 6,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Infinite recursion: `__getattr__` calling `__getattribute__` on a missing attribute re-enters `__getattr__`"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-22871",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/dates.py",
+        "patch_lines": 6,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Offset suppression condition is wrong: `level < 2` with `unique == 1` does not correctly detect year-in-tick-label situations"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-14608",
+        "repo": "django/django",
+        "bug_file": "django/forms/formsets.py",
+        "patch_lines": 7,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-11964",
+        "repo": "django/django",
+        "bug_file": "django/db/models/enums.py",
+        "patch_lines": 8,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 1,
+        "issue_titles": [
+          "IntegerChoices.__str__ silently broken by MRO interaction"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-7671",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/utils/introspection.py",
+        "patch_lines": 9,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 1,
+        "issue_titles": [
+          "Pre-release suffix stripping applied only to requested version, not to have_version"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19954",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/combinatorics/perm_groups.py",
+        "patch_lines": 9,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "scikit-learn__scikit-learn-12973",
+        "repo": "scikit-learn/scikit-learn",
+        "bug_file": "sklearn/linear_model/least_angle.py",
+        "patch_lines": 10,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-10614",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/ext/inheritance_diagram.py",
+        "patch_lines": 11,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 2,
+        "issue_titles": [
+          "SVG internal `refuri` links lose the `../` prefix unconditionally",
+          "External intersphinx `refuri` links also lose the `../` prefix for SVG",
+          "`rsplit('#', 1)[-1]` returns the full URI when there is no `#` fragment"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-22080",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/printing/codeprinter.py",
+        "patch_lines": 12,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 1,
+        "issue_titles": [
+          "Unary-minus parenthesization fix only applied when `len(a) == 1`, leaving multi-factor cases unhandled"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sympy__sympy-19783",
+        "repo": "sympy/sympy",
+        "bug_file": "sympy/physics/quantum/dagger.py",
+        "patch_lines": 13,
+        "caught": true,
+        "decision": "discuss",
+        "blocker_count": 0,
+        "major_count": 2,
+        "issue_titles": [
+          "Dagger.__mul__ bypasses SymPy's expression system, breaking symbolic evaluation",
+          "IdentityOperator.__mul__ returns `other` for Dagger but should return `other` \u2014 however Dagger is not imported in operator.py"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "sphinx-doc__sphinx-7985",
+        "repo": "sphinx-doc/sphinx",
+        "bug_file": "sphinx/builders/linkcheck.py",
+        "patch_lines": 17,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 2,
+        "issue_titles": [
+          "Ignore-pattern check runs after broken verdict, not before existence check",
+          "for/else misuse: 'broken' is returned even when an ignore pattern matches",
+          "Local URI resolved relative to srcdir ignores document-relative paths and anchors"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "matplotlib__matplotlib-24970",
+        "repo": "matplotlib/matplotlib",
+        "bug_file": "lib/matplotlib/colors.py",
+        "patch_lines": 21,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 0,
+        "issue_titles": [
+          "Float arithmetic on `xa` no longer protected by `np.errstate(invalid='ignore')`"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15563",
+        "repo": "django/django",
+        "bug_file": "django/db/models/sql/compiler.py",
+        "patch_lines": 25,
+        "caught": true,
+        "decision": "request_changes",
+        "blocker_count": 1,
+        "major_count": 2,
+        "issue_titles": [
+          "related_ids not populated on the fast path, breaking get_related_updates",
+          "Empty path from get_path_to_parent causes vacuous-truth branch to be taken incorrectly",
+          "related_ids_index built from self.query.related_updates but query is a clone \u2014 ordering may differ"
+        ],
+        "error": null
+      },
+      {
+        "instance_id": "django__django-15732",
+        "repo": "django/django",
+        "bug_file": "django/db/backends/base/schema.py",
+        "patch_lines": 32,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      },
+      {
+        "instance_id": "astropy__astropy-14182",
+        "repo": "astropy/astropy",
+        "bug_file": "astropy/io/ascii/rst.py",
+        "patch_lines": 41,
+        "caught": false,
+        "decision": "approve",
+        "blocker_count": 0,
+        "major_count": 0,
+        "issue_titles": [],
+        "error": null
+      }
+    ],
+    "wall_seconds": 430.4930914994329,
+    "false_positive_rate": 0.6
+  },
+  "note": "prc-reversed results reused from real-bugs-2026-05-26T211643Z.json; vanilla and prc-forward freshly run."
+}
